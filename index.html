@@ -12,9 +12,33 @@
 <body>
   <div id='buttonsGoHere'></div>
 
-  <div id="addUserButton">
+  <br>
 
+  <div id="addUserButton">
+    <form>
+
+      <div class="col-auto">
+          <div class="form-check mb-2">
+            <label class="form-check-label" for="autoSizingCheck">
+              Make new button
+            </label>
+          </div>
+        </div>
+
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInput">Select a theme</label>
+          <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Select a theme">
+        </div>
+        
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2" id='submit'>Submit</button>
+        </div>
+      </div>
+    </form>
   </div>
+
+
   <script src="assets/javascript/generator.js"></script>
 </body>
 </html>
