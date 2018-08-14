@@ -64,7 +64,7 @@ generateButtons(celebArr);
         'src': arr[i].images.fixed_height_still.url
       });
       newImgDiv.html('<h6>Rated: ' + arr[i].rating + '</h6>');
-      newImgDiv.prepend(celebImg);
+      newImgDiv.append(celebImg);
       $('#appendImagesHere').prepend(newImgDiv);
     }
   }
