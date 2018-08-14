@@ -54,6 +54,7 @@ generateButtons(celebArr);
   
   function createGiphs(arr) {
     for (var i = 0; i < arr.length; i++) {
+      var newImgDiv = $('<div>');
       var celebImg = $('<img>');
       celebImg.attr({
         'class': 'giph',
@@ -62,7 +63,9 @@ generateButtons(celebArr);
         'data-animate': arr[i].images.fixed_height.url,
         'src': arr[i].images.fixed_height_still.url
       });
-      $('#appendImagesHere').prepend(celebImg);
+      newImgDiv.html('<h2>Rated: ' + arr[i].rating + '</h2>');
+      newImgDiv.prepend(celebImg);
+      $('#appendImagesHere').prepend(newImgDiv);
     }
   }
 
