@@ -1,5 +1,5 @@
 //create array of theme strings
-var celebArr = ['Gary Busey', 'Jim Carey', 'Bob Ross', 'Jerry Garcia', 'Bob Weir', 'Bruce Lee'];
+var celebArr = ['Gary Busey', 'Jim Carey', 'Bob Ross', 'Jerry Garcia', 'Pigpen', 'Bruce Lee'];
 
 //for each theme(elem) create a button on the page 
 function makeButton(item) {
